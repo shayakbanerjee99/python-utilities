@@ -8,23 +8,23 @@ def find_dir(x, y, m, n):
 	if y == 0:
 		if x == 0:
 			adj_p = ['R', 'D']
-		elif x < n-1:
+		elif x < m-1:
 			adj_p = ['L', 'R', 'D']
-		else: # x == n-1
+		else: # x == m-1
 			adj_p = ['L', 'D']
 	elif y < n-1:
 		if x==0:
 			adj_p = ['U', 'R', 'D']
-		elif x < n-1:
+		elif x < m-1:
 			adj_p = ['U', 'R', 'D', 'L']
-		else: # x == n-1
+		else: # x == m-1
 			adj_p = ['U', 'L', 'D']
 	else: # y == n-1
 		if x == 0:
 			adj_p = ['U', 'R']
-		elif x < n-1:
+		elif x < m-1:
 			adj_p = ['U', 'L', 'R']
-		else: # x == n-1
+		else: # x == m-1
 			adj_p = ['U', 'L']
 	return adj_p
 	
